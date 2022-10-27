@@ -3,7 +3,7 @@ $box: 150px;
 .board{
 	display: grid;
 	grid-template-columns:$box $box $box;
-	grid-template-row:$box $box $box;
+	grid-template-rows:$box $box $box;
 	margin-top: 1em;
 }
 
