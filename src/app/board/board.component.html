@@ -1,0 +1,18 @@
+<button (click)="newGame()">Start New Game</button>
+
+<h2 *ngIf="isGameInProgress; else gameFinished">
+  {{ xIsNext ? "X" : "O" }}'s turn
+</h2>
+
+<ng-template #gameFinished>
+  <h2 *ngIf="winner; else noWinner">Player {{ winner }} won the game</h2>
+  <ng-template #noWinner><h2>Draw</h2></ng-template>
+</ng-template>
+
+<div ngClass="board">
+  <app-box
+    *ngFor="let square of squares; let i = index"
+    [value]="square"
+    (click)="isGameInProgress ? makeMove(i) : null"
+  ></app-box>
+</div>

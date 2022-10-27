@@ -1,0 +1,13 @@
+$box: 150px;
+
+.board{
+	display: grid;
+	grid-template-columns:$box $box $box;
+	grid-template-row:$box $box $box;
+	margin-top: 1em;
+}
+
+app-box {
+	width: $box;
+	height: $box;
+}

@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./box.component.scss'],
 })
 export class BoxComponent implements OnInit {
-  @Input() value: 'X' | 'O' | undefined = undefined;
+  @Input() value: 'X' | 'O' | undefined | null = undefined;
 
   constructor() {}
 
