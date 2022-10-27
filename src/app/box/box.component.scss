@@ -1,0 +1,24 @@
+.box {
+	border: 1px solid grey;
+	width:100px;
+	height:100px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 75px;
+	background-color: rgb(140, 0, 196);
+}
+
+.box:active{
+	opacity: 0.5;
+}
+
+.zero {
+	background-color: rgb(0, 68, 253);
+}
+
+.cross {
+	background-color: rgb(32, 204, 32);
+}
